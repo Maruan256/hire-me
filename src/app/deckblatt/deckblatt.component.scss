@@ -1,0 +1,106 @@
+//
+//.ueberschrift {
+//  color: #000;
+//  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+//  font-family: 'Red Rose';
+//  font-size: 48px;
+//  font-style: normal;
+//  font-weight: 400;
+//  line-height: normal;
+//  font-variant: small-caps;
+//  letter-spacing: 200px;
+//  text-decoration-line: none;
+//}
+//.ueberschrift:hover {
+//  color: #000;
+//  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+//  font-family: 'Red Rose';
+//  font-size: 48px;
+//  font-style: normal;
+//  font-weight: 400;
+//  line-height: normal;
+//  font-variant: small-caps;
+//  letter-spacing: 200px;
+//  text-decoration-line: line-through;
+//}
+
+
+.container {
+  display:flex;
+  max-width: 100%;
+  overflow: clip;
+  padding-top: 100px;
+  padding-right: 80px;
+}
+.row {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.item {
+
+}
+.ueberschrift {
+  color: #000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'Rita', sans-serif;
+  font-size: 14vw;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  font-variant: small-caps;
+  letter-spacing: 18vw;
+  white-space: nowrap;
+  max-width: 100%;/* Reduce letter spacing for a better appearance */
+  text-decoration-line: none;
+  text-decoration-line: line-through;
+  /* This ensures "CO" and "DE" will be displayed on separate lines */
+}
+.enter {
+  color: #000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'Rita', sans-serif;
+  font-size: 1.5vw;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  font-variant: small-caps;
+  letter-spacing: 7vw;
+  white-space: nowrap;
+  max-width: 100%;/* Reduce letter spacing for a better appearance */
+  text-decoration-line: none;
+  /* This ensures "CO" and "DE" will be displayed on separate lines */
+}
+.enter:hover {
+  text-decoration-line: line-through;
+   /* Use underline for the hover effect */
+}
+
+/* Media Query for Midsize Screens (e.g., tablets) */
+@media only screen and (max-width: 768px) {
+  .ueberschrift {
+    display: flex; /* Use grid for vertical stacking */
+  }
+
+  .ueberschrift::before {
+    content: ''; /* Empty content to create the pseudo-element */
+    grid-row: 1; /* Position on the first row (vertically stacked) */
+  }
+}
+
+/* Media Query for Smartphone Displays */
+@media (max-width: 480px) {
+  .ueberschrift {
+    font-size: 24px; /* Adjust font size for smaller screens */
+    letter-spacing: 0; /* Remove letter spacing */
+    white-space: nowrap; /* Prevent line breaks */
+    text-decoration-line: underline; /* Use underline for hover effect on smallest screens */
+    display: grid; /* Use grid for vertical stacking */
+  }
+
+  .ueberschrift::before {
+    content: ''; /* Empty content to create the pseudo-element */
+    grid-row: 1; /* Position on the first row (vertically stacked) */
+  }
+}
+

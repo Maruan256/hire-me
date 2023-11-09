@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+@font-face {
+  font-family: 'Red Rose';
+  src: url('../src/assets/fonts/RedRose-VariableFont_wght.ttf')
+}
+body {
+  background-color: #DAD9D9;
+}

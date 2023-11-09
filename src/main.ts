@@ -1,6 +1,11 @@
+/// <reference types="@angular/localize" />
+
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { AppModule } from './app/app.module';
+
+import { provideRouter } from "@angular/router";
+import {Routes} from "@angular/router";
 
 
 platformBrowserDynamic().bootstrapModule(AppModule)
