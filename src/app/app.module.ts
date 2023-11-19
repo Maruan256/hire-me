@@ -17,6 +17,7 @@ import {RouterModule} from "@angular/router";
 import { AllgemeineSeiteComponent } from './individuelle-seite/allgemeine-seite/allgemeine-seite.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { ArbeitgeberComponent } from './arbeitgeber/arbeitgeber.component';
+import {NgOptimizedImage} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { ArbeitgeberComponent } from './arbeitgeber/arbeitgeber.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    NgOptimizedImage,
   ],
   providers: [],
   bootstrap: [AppComponent]
