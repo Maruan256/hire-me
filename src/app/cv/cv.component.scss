@@ -11,41 +11,79 @@
 //  object-position: 100% 1%;
 //  border: 3px solid chartreuse;
 //}
-body, html {
+//body, html {
+//  height: 100%;
+//  margin: 0;
+//  overflow: hidden; /* Ensure no overflow */
+//}
+//
+//.container-fluid {
+//  height: 100%;
+//  padding: 0;
+//}
+//
+//.row {
+//  height: 100%;
+//}
+//
+//
+//.right-half {
+//  height: 100%;
+//  width: 100%;
+//  overflow: hidden;
+//  //border: 3px solid greenyellow;
+//  padding-left: 0;
+//  padding-right: 0;
+//}
+//
+//.right-half img {
+//  width: 100%;
+//  height: 100%;
+//  object-fit: cover;
+//}
+//
+//@media (max-width: 768px) {
+//  /* Adjust styles for smaller screens */
+//  .black-bg, .right-half {
+//    width: 100%;
+//    height: auto;
+//  }
+//}
+.imageContainer{
+  height: 100vh;
+}
+.bgImage{
+  background-image: url('../../assets/images/CVBackground.jpg');
   height: 100%;
-  margin: 0;
-  overflow: hidden; /* Ensure no overflow */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  //justify-content: center;
+  //align-items: center;
+}
+.headlineVorname {
+  color: #e74c3c;
+  font-family: 'Rita', sans-serif;
+  font-size: 6vw;
+  font-weight: 900;
+  text-shadow: #ffb49d 1px 0 10px;
+  overflow: clip;
 }
 
-.container-fluid {
-  height: 100%;
-  padding: 0;
+.row{
+  margin-top: 50px;
+  border: 1px solid red;
 }
-
-.row {
-  height: 100%;
+.unterUeberschrift {
+  color: #000000;
+  font-family: 'Rita', sans-serif;
+  font-size: 2vw;
+  font-weight: 600;
+  text-shadow: #fb835b 10px 0 20px;
+  overflow: clip;
 }
-
-
-.right-half {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  //border: 3px solid greenyellow;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.right-half img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-@media (max-width: 768px) {
-  /* Adjust styles for smaller screens */
-  .black-bg, .right-half {
-    width: 100%;
-    height: auto;
-  }
+.borderRight{
+  padding: 10px;
+  border-right: solid black 1px;
 }

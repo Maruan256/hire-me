@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./cv.component.scss']
 })
 export class CvComponent {
-  image = 'assets/images/besseresPortraitwideOpti.jpg'
+  image = 'assets/images/CVBackground.jpg'
 }
