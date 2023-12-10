@@ -18,6 +18,7 @@ import { AllgemeineSeiteComponent } from './individuelle-seite/allgemeine-seite/
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { ArbeitgeberComponent } from './arbeitgeber/arbeitgeber.component';
 import {NgOptimizedImage} from "@angular/common";
+import { DieseSeiteComponent } from './diese-seite/diese-seite.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import {NgOptimizedImage} from "@angular/common";
     DeckblattComponent,
     IndividuelleSeiteComponent,
     AllgemeineSeiteComponent,
-    ArbeitgeberComponent
+    ArbeitgeberComponent,
+    DieseSeiteComponent
   ],
   imports: [
     BrowserModule,

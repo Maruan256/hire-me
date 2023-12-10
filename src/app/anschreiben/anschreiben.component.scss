@@ -1,0 +1,11 @@
+.imageContainer{
+  height: 100vh;
+}
+.bgImage {
+  background-image: url('../../assets/images/CVBackground.jpg');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}

@@ -8,6 +8,7 @@ import {ArbeitenComponent} from "./arbeiten/arbeiten.component";
 import {AnschreibenComponent} from "./anschreiben/anschreiben.component";
 import {IndividuelleSeiteComponent} from "./individuelle-seite/individuelle-seite.component";
 import {AllgemeineSeiteComponent} from "./individuelle-seite/allgemeine-seite/allgemeine-seite.component";
+import {DieseSeiteComponent} from "./diese-seite/diese-seite.component";
 
 const routes: Routes = [
   { path: '', component: DeckblattComponent},
@@ -15,8 +16,16 @@ const routes: Routes = [
   { path: 'gehaltsVorstellung', component: GehaltsvorstellungComponent},
   { path: 'arbeiten', component: ArbeitenComponent},
   { path: 'anschreiben', component: AnschreibenComponent},
-  { path: 'individuelleSeite/:id', component: IndividuelleSeiteComponent},
-  { path: 'allgemeineSeite', component: AllgemeineSeiteComponent}
+  { path: 'individuelleSeite/:id', component: IndividuelleSeiteComponent,
+    children: [
+      {path: 'anschreiben', component: AnschreibenComponent},
+      { path: 'arbeiten', component: ArbeitenComponent},
+      { path: 'cv', component: CvComponent},
+
+    ]},
+  { path: 'allgemeineSeite', component: AllgemeineSeiteComponent},
+  { path: 'dieseSeite', component: DieseSeiteComponent}
+
 
 
 ]
